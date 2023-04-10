@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --deep-dark: rgb(26, 26, 26);
+    --grey: rgb(201, 196, 196);
+    --beige: rgb(253, 252, 252);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--beige);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--beige);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.clients {
+    width: 1000px;
+    max-height: 90vh;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 4px 4px 5px rgba(224, 147, 147, 0.4);
+    text-align: center;
+}
+
+.header {
+    border-radius: 5px 5px 0 0;
+    padding: 40px;
+    background-image: linear-gradient(340deg, #077b80 0%, #09ddf9 100%);
+  
+}
+
+input {
+    width: 80%;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(126 114 114);
+    background-color: var(--beige);
+    margin-bottom: 20px;
+}
+
+
+
+.btn-add {
+    width: 30%;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    color: var(--deep-dark);
+    background-color: var(--beige);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .3s, background-color .3s;
+}
+
+.btn-add:hover {
+    color: #fff;
+    background-color:rgb(91 200 205);
+}
+
+.client-list {
+    background-image: linear-gradient(360deg, #e7e2e2 0%, #f9f9f9 100%);
+    overflow-y: scroll;
+    height: 375px;
+    padding: 20px 0;
+}
+
+.client-list h3 {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.client-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding-left: 20px;
+    text-align: left;
+    list-style: none;
+    background-color: #e9e5e5;
+    border: 2px solid grey;
+    border-radius: 8px;
+   
+}
+
+.tools {
+    display: inline-block;
+}
+
+.tools button {
+    padding: 15px 30px;
+    margin-right: 12px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.tools button :hover {
+    background-color: #27e227f6;
+}
+
+
+
+.edit {
+    font-weight: bold;
+    color: rgb(15, 179, 69);
+    transition: color .3s, background-color .3s
+}
+
+.delete {
+    font-weight: bold;
+    color: tomato;
+    transition: color .3s, background-color .3s
+}
+
+.edit:hover{
+    color: white;
+    background-color: rgba(15, 179, 70, 0.795);
+}
+.delete:hover{
+    color:white;
+    background-color: rgba(255, 99, 71, 0.863);
+}
+
+.popup-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup {
+    max-width: 800px;
+    color: var(--beige);
+    background-color:  #077b80;
+    border-radius: 5px;
+}
+
+.popup h3 {
+    padding: 20px;
+}
+
+.popup-info {
+    color: var(--beige);
+    margin-bottom: 20px;
+}
+
+.popup-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.popup-btn {
+    width: 30%;
+    display: inline-block;
+    padding: 10px 22px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+
+.accept{
+    border:4px solid rgb(15, 179, 69) ;
+    border-radius: 8px;
+    transition: color .3s, background-color .3s;
+}
+.cancel{
+    border: 4px solid tomato;
+    border-radius: 8px;
+    transition: color .3s, background-color .3s;
+}
+
+.accept:hover{
+    color:white;
+    background-color:rgb(15, 179, 69);
+}
+
+.cancel:hover{
+    color:white;
+    background-color:tomato;
+}
+
+
+
+/*/////////////////////////////////////////////*/
+.client-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 15%;
+}
+
+.label-wrapper span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label-wrapper p {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
